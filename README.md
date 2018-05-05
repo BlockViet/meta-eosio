@@ -10,23 +10,18 @@ Please see the corresponding sections below for details.
 
 # Dependencies
 
-URI: git://git.openembedded.org/bitbake
-  
-branch: master
+ - URI: git://git.openembedded.org/bitbake
+ - branch: master
+---
+ - URI: git://git.openembedded.org/openembedded-core
+ - layers: meta
+ - branch: master
+---
+ - URI: git://github.com/bernardoaraujor/mega-wasm
+ - layers: meta-wasm
+ - branch: master
+---
 
-
-URI: git://git.openembedded.org/openembedded-core
-
-layers: meta
-
-branch: master
-
-
-URI: git://github.com/bernardoaraujor/mega-wasm
-
-layers: meta-wasm
-
-branch: master
 # Patches
 
 Please submit any patches against the meta-eosio layer to the maintainer:
