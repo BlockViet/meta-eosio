@@ -26,7 +26,7 @@ Please see the corresponding sections below for details.
 
 Please submit any patches against the meta-eosio layer to the maintainer:
 
-Bernardo A. Rodrigues <bernardo@openminingOS.org>
+Bernardo A. Rodrigues <bernardoaraujor@gmail.com>
 
 # Table of Contents
 
