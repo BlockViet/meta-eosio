@@ -8,47 +8,50 @@ The EOS.IO software introduces a new blockchain architecture designed to enable 
 
 Please see the corresponding sections below for details.
 
-Dependencies
-============
+# Dependencies
 
-  URI: git://git.openembedded.org/bitbake
-  branch: master
+URI: git://git.openembedded.org/bitbake
+  
+branch: master
 
-  URI: git://git.openembedded.org/openembedded-core
-  layers: meta
-  branch: master
 
-  URI: git://github.com/bernardoaraujor/mega-wasm
-  layers: meta-wasm
-  branch: master
-Patches
-=======
+URI: git://git.openembedded.org/openembedded-core
+
+layers: meta
+
+branch: master
+
+
+URI: git://github.com/bernardoaraujor/mega-wasm
+
+layers: meta-wasm
+
+branch: master
+# Patches
 
 Please submit any patches against the meta-eosio layer to the maintainer:
 
 Bernardo A. Rodrigues <bernardo@openminingOS.org>
 
-Table of Contents
-=================
+# Table of Contents
 
   I. Setting up Poky
+
  II. Adding the meta-eosio layer to your build
+
 III. Building eosio-image-minimal for qemuarm
+
  IV. Running eosio on qemuarm
 
 
-I. Setting up Poky
-=================================================
+# I. Setting up Poky
 
-II. Adding the meta-eosio layer to your build
-=================================================
+# II. Adding the meta-eosio layer to your build
 
 Run 'bitbake-layers add-layer meta-eosio'
 
-III. Building eosio-image-minimal for qemuarm
-=================================================
+# III. Building eosio-image-minimal for qemuarm
 
 ...
 
-IV. Running eosio on qemuarm
-=================================================
+# IV. Running eosio on qemuarm
