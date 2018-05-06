@@ -50,3 +50,5 @@ Run 'bitbake-layers add-layer meta-eosio'
 ...
 
 ### IV. Running eosio on qemuarm
+
+![alt text](https://static.eos.io/images/Landing/SectionTokenSale/eos_spinning_logo.gif "eos.io")
