@@ -10,7 +10,7 @@ inherit cmake
 #DEPENDS = " "
 #RDEPENDS_${PN} = " "
 
-SRC_URI = "gitsm://github.com//EOSIO/eos.git;protocol=https;branch=master;"
+SRC_URI = "gitsm://github.com/EOSIO/eos.git;protocol=https;branch=master;"
 SRCREV = "d9ad8eec49c59fb107f472de3952d29c9e73a023"
 
 S = "${WORKDIR}/git"
