@@ -1,4 +1,4 @@
-AUTHOR = "Bernardo A. Rodrigues <bernardo@openminingOS.org>"
+AUTHOR = "Bernardo A. Rodrigues <bernardoaraujor@gmail.com>"
 SUMMARY = "EOSIO - The Most Powerful Infrastructure for Decentralized Applications"
 DESCRIPTION = "EOSIO software enables developers to create and deploy high-performance, horizontally scalable, blockchain infrastructure upon which decentralized applications can be built."
 
