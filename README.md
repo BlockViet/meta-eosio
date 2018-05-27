@@ -15,11 +15,11 @@ Please see the corresponding sections below for details.
 ---
  - URI: git://git.openembedded.org/openembedded-core
  - layers: meta
- - branch: pyro
+ - branch: master
 ---
  - URI: git://github.com/kraj/meta-clang
  - layers: meta-clang
- - branch: pyro
+ - branch: master
 
 ## Patches
 
