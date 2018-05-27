@@ -15,12 +15,11 @@ Please see the corresponding sections below for details.
 ---
  - URI: git://git.openembedded.org/openembedded-core
  - layers: meta
- - branch: master
+ - branch: pyro
 ---
- - URI: git://github.com/bernardoaraujor/meta-wasm
- - layers: meta-wasm
- - branch: master
----
+ - URI: git://github.com/kraj/meta-clang
+ - layers: meta-clang
+ - branch: pyro
 
 ## Patches
 
