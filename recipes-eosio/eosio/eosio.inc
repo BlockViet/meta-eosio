@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 inherit cmake
 
-DEPENDS = " binaryen-native boost openssl git gmp"
+DEPENDS = " clang-native binaryen-native boost openssl gmp git"
 
 SRC_URI = "gitsm://github.com/EOSIO/eos.git;protocol=https;branch=master;tag=dawn-v4.2.0"
 
@@ -16,6 +16,7 @@ S = "${WORKDIR}/git"
 BUILD_DIR = "${S}/build"
 
 USR_DIR = "${WORKDIR}/recipe-sysroot/usr"
+USR_DIR_NATIVE = "${WORKDIR}/recipe-sysroot-native/usr"
 OPT_DIR_NATIVE ="${WORKDIR}/recipe-sysroot-native/opt/wasm"
 INCLUDE_DIR = "${WORKDIR}/recipe-sysroot/usr/include"
 LIBRARIES_DIR = "${WORKDIR}/recipe-sysroot/usr/lib"
@@ -23,9 +24,8 @@ BINARY_DIR_NATIVE = "${WORKDIR}/recipe-sysroot-native/usr/bin"
 
 CMAKE_BUILD_TYPE = "Release"
 
-#TODO: needs to be fixed
-WASM_ROOT = "/home/bernardo/opt/wasm"
-BOOST_ROOT = "${WORKDIR}/recipe-sysroot/usr"
+WASM_ROOT = "${USR_DIR_NATIVE}"
+BOOST_ROOT = "${USR_DIR}"
 GMP_LIBRARIES_DIR = "${LIBRARIES_DIR}"
 GMP_INCLUDE_DIR = "${INCLUDE_DIR}"
 BINARYEN_BIN = "${BINARY_DIR_NATIVE}"
@@ -36,3 +36,4 @@ BUILD_MONGO_DB_PLUGIN = "false"
 ENABLE_COVERAGE_TESTING = "false"
 
 TARGET_CC_ARCH = "-pthread"
+
