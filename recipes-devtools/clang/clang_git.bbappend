@@ -1,0 +1,2 @@
+EXTRA_OECMAKE_append_class-native += "-DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly "
+SYSROOT_DIRS_NATIVE = "${prefix}"
