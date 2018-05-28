@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 inherit cmake
 
-DEPENDS = " clang-native binaryen-native boost openssl gmp secp256k1-native git"
+DEPENDS = " clang-native binaryen-native boost openssl gmp secp256k1 git"
 
 SRC_URI = "gitsm://github.com/EOSIO/eos.git;protocol=https;branch=master;tag=dawn-v4.2.0"
 
@@ -20,7 +20,7 @@ USR_DIR_NATIVE = "${WORKDIR}/recipe-sysroot-native/usr"
 OPT_DIR_NATIVE ="${WORKDIR}/recipe-sysroot-native/opt/wasm"
 INCLUDE_DIR = "${WORKDIR}/recipe-sysroot/usr/include"
 LIBRARIES_DIR = "${WORKDIR}/recipe-sysroot/usr/lib"
-BINARY_DIR_NATIVE = "${WORKDIR}/recipe-sysroot-native/usr/bin"
+BINARY_LOCAL_NATIVE = "${WORKDIR}/recipe-sysroot-native/usr/local/bin"
 
 CMAKE_BUILD_TYPE = "Release"
 
@@ -28,7 +28,7 @@ WASM_ROOT = "${USR_DIR_NATIVE}"
 BOOST_ROOT = "${USR_DIR}"
 GMP_LIBRARIES_DIR = "${LIBRARIES_DIR}"
 GMP_INCLUDE_DIR = "${INCLUDE_DIR}"
-BINARYEN_BIN = "${BINARY_DIR_NATIVE}"
+BINARYEN_BIN = "${BINARY_LOCAL_NATIVE}"
 OPENSSL_ROOT_DIR = "${INCLUDE_DIR}/openssl"
 Secp256k1_INCLUDE_DIR = "${INCLUDE_DIR}"
 Secp256k1_LIBRARY = "${LIBRARIES_DIR}"

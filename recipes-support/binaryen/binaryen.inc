@@ -7,13 +7,12 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7ca
 
 inherit cmake
 
-SRC_URI = "git://github.com/WebAssembly/binaryen.git;protocol=https;branch=souper;"
-SRCREV = "1c6b0a2f2f326784beb822e410f0966e6e51a07b"
+SRC_URI = "git://github.com/EOSIO/binaryen.git;protocol=https;branch=eosio"
+SRCREV = "b4b5dc9dee60489c4206af99227524b13f2eb3aa"
 
 S = "${WORKDIR}/git"
 
-FILES_${PN} = "/usr"
-
-SYSROOT_DIRS_NATIVE = "/usr"
+SYSROOT_DIRS = "/usr/local/bin"
+SYSROOT_DIRS_NATIVE = "/usr/local/bin"
 
 BBCLASSEXTEND = "native"
