@@ -27,27 +27,4 @@ Please submit any patches against the meta-eosio layer to the maintainer:
 
 Bernardo A. Rodrigues <bernardoaraujor@gmail.com>
 
-## Table of Contents
-
-  I. Setting up Poky
-
- II. Adding the meta-eosio layer to your build
-
-III. Building eosio-image-minimal for qemuarm
-
- IV. Running eosio on qemuarm
-
-
-### I. Setting up Poky
-
-### II. Adding the meta-eosio layer to your build
-
-Run 'bitbake-layers add-layer meta-eosio'
-
-### III. Building eosio-image-minimal for qemuarm
-
-...
-
-### IV. Running eosio on qemuarm
-
-![alt text](https://static.eos.io/images/Landing/SectionTokenSale/eos_spinning_logo.gif "eos.io")
+![gif](https://static.eos.io/images/Landing/SectionTokenSale/eos_spinning_logo.gif "eos.io")
