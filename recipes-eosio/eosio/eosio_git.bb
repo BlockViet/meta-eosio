@@ -11,6 +11,8 @@ do_configure(){
           -DBINARYEN_BIN=${BINARYEN_BIN} \
           -DOPENSSL_ROOT_DIR=${OPENSSL_ROOT_DIR} \
           -DBUILD_DOXYGEN=${DOXYGEN} \
+          -DSecp256k1_INCLUDE_DIR=${Secp256k1_INCLUDE_DIR} \
+          -DSecp256k1_LIBRARY=${Secp256k1_LIBRARY} \
           -DBUILD_MONGO_DB_PLUGIN=${BUILD_MONGO_DB_PLUGIN} \
           -DENABLE_COVERAGE_TESTING=${ENABLE_COVERAGE_TESTING} \
           ${S}

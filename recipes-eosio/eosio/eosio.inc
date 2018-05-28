@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 inherit cmake
 
-DEPENDS = " clang-native binaryen-native boost openssl gmp git"
+DEPENDS = " clang-native binaryen-native boost openssl gmp secp256k1-native git"
 
 SRC_URI = "gitsm://github.com/EOSIO/eos.git;protocol=https;branch=master;tag=dawn-v4.2.0"
 
@@ -30,6 +30,8 @@ GMP_LIBRARIES_DIR = "${LIBRARIES_DIR}"
 GMP_INCLUDE_DIR = "${INCLUDE_DIR}"
 BINARYEN_BIN = "${BINARY_DIR_NATIVE}"
 OPENSSL_ROOT_DIR = "${INCLUDE_DIR}/openssl"
+Secp256k1_INCLUDE_DIR = "${INCLUDE_DIR}"
+Secp256k1_LIBRARY = "${LIBRARIES_DIR}"
 
 DOXYGEN = "false"
 BUILD_MONGO_DB_PLUGIN = "false"

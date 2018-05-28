@@ -12,3 +12,8 @@ SRC_URI = "git://github.com/cryptonomex/secp256k1-zkp.git;protocol=https;branch=
 SRCREV = "bd067945ead3b514fba884abd0de95fc4b5db9ae"
 
 S = "${WORKDIR}/git"
+
+SYSROOT_DIRS_NATIVE = "/usr/include /usr/lib"
+
+BBCLASSEXTEND = "native"
+
