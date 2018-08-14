@@ -13,7 +13,8 @@ SRCREV = "bd067945ead3b514fba884abd0de95fc4b5db9ae"
 
 S = "${WORKDIR}/git"
 
-SYSROOT_DIRS_NATIVE = "/usr/include /usr/lib"
+TOOLCHAIN = "clang"
+TARGET_CC_ARCH = "-pthread"
 
-BBCLASSEXTEND = "native"
+DISABLE_STATIC = ""
 
