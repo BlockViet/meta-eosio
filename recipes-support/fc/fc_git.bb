@@ -6,6 +6,6 @@ do_configure(){
           -DSecp256k1_LIBRARY=${Secp256k1_LIBRARY} \
           -DGMP_LIBRARIES=${GMP_LIBRARIES_DIR} \
           -DGMP_INCLUDE_DIR=${GMP_INCLUDE_DIR} \
+          -DBOOST_ROOT=${BOOST_ROOT} \
           ${S}
 }
-
